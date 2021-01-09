@@ -10,3 +10,7 @@ def index(request):
     return render(request, 'picha/index.html', {'images': images[::-1], 'locations': locations})
 
 
+def image_location(request, location):
+    images = Image.filter_by_location(location)
+    print(images)
+    return render(request, 'pic/location.html', {'location_images': images})
