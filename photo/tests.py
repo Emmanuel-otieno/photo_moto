@@ -4,7 +4,7 @@ from .models import Image,Category,Location
 
 class TestImage(TestCase):
     def setUp(self):
-        self.location = Location(name='Moringa')
+        self.location = Location(name='Kibera')
         self.location.save_location()
 
         self.category = Category(name='home')
@@ -34,7 +34,7 @@ class TestImage(TestCase):
 
     def test_search_image_by_location(self):
         self.image_test.save_image()
-        found_images = self.image_test.filter_by_location(location='moringa')
+        found_images = self.image_test.filter_by_location(location='kibera')
         self.assertTrue(len(found_images) == 1)
 
     def test_search_image_by_category(self):
@@ -65,3 +65,29 @@ class CategoryTestClass(TestCase):
         self.category.delete_category()
         category = Category.objects.all()
         self.assertTrue(len(category) == 0)
+
+
+
+class TestLocation(TestCase):
+    def setUp(self):
+        self.location = Location(name='Kibera')
+        self.location.save_location()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.location, Location))
+
+    def test_save_location(self):
+        self.location.save_location()
+        locations = Location.get_locations()
+        self.assertTrue(len(locations) > 0)
+
+    def test_get_locations(self):
+        self.location.save_location()
+        locations = Location.get_locations()
+        self.assertTrue(len(locations) > 1)
+
+
+    def test_delete_location(self):
+        self.location.delete_location()
+        location = Location.objects.all()
+        self.assertTrue(len(location) == 0)        
