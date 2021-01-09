@@ -1,14 +1,11 @@
-{% extends 'pic/base.html' %} {% block content %}
+{% extends 'picha/base.html' %} {% block content %}
 <div
   class="container-fluid landing"
   style="
-    
-    background-color: powderblue;
+     background-color: powderblue;
   "
 >
-  <h2 class="text-center image" style="color: white">
-    Welcome to the Pic-Gallery
-  </h2>
+  
   <a href="#b" class="scroll"
     ><button class="btn btn-sm btn-info image D-block mx-auto">
       Browse
@@ -20,7 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7" styles="text-center">
-        <h3>Gallery</h3>
+        <h3>Photos</h3>
       </div>
       {% for location in locations %}
       <div class="col-md-4">
