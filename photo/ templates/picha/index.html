@@ -1,17 +1,12 @@
 {% extends 'picha/base.html' %} 
 {% block content %}
-<div
-  class="container-fluid landing"
+<div class="container-fluid landing"
   style="
      background-color: powderblue;
   "
 >
   
-  <a href="#b" class="scroll"
-    ><button class="btn btn-sm btn-info image D-block mx-auto">
-      Browse
-    </button></a
-  >
+  <a href="#b" class="scroll" ><button class="btn btn-sm btn-info image D-block mx-auto">  Browse  </button></a >
 </div>
 
 <div class="container-fluid boded" id="b">
@@ -23,12 +18,7 @@
       {% for location in locations %}
       <div class="col-md-4">
         <span id="locations">
-          <a
-            class="btn btn-outline-info btn-sm"
-            id="btn"
-            href="/location/{{location.name}}"
-            >{{location.name}}</a
-          >
+          <a class="btn btn-outline-info btn-sm"  id="btn"  href="/location/{{location.name}}" >{{location.name}}</a>
         </span>
       </div>
       {%endfor%}
@@ -45,26 +35,13 @@
     {%endfor%}
     <div class="card">
         {% for image in images %}
-        <div  class="modal fade"
-          id="{{image.id}}"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-dialog-centered modal-md"
-            role="document"
-          >
+        <div  class="modal fade" id="{{image.id}}" tabindex="-1"  role="dialog"  aria-labelledby="exampleModalCenterTitle"  aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered modal-md" role="document" >
             <div class="modal-content modalcard">
               <div class="modal-header">
                 <h5 class="modal-title" id="imageheader">{{image.name}}</h5>
                 <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
+                  type="button"  class="close"  data-dismiss="modal"  aria-label="Close" >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
@@ -75,12 +52,8 @@
                 <a href="/location/{{image.location}}"  class="btn btn-sm btn-outline-info"  >{{image.location}}</a>
               </div>
               <div class="modal-footer">
-                <input
-                  class="form-control input-lg"
-                  type="text"
-                  value="{{image.image.url}}"
-                  id="{{image.id}}.url"
-                />
+                <input class="form-control input-lg"  type="text"  value="{{image.image.url}}"  id="{{image.id}}.url"/>
+
                 <button class="btn btn-success btn-sm"  onclick="copyLink('{{image.id}}.url')" >
                   Copy
                 </button>
