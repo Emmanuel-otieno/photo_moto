@@ -8,15 +8,13 @@
 <body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{% url 'newsToday' %}">Photo Moto</a>
-    </div>
-
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand text-white" href="/"><h3><strong>Photo Moto</strong></h3></a>
+       
       <!-- Adding a search form  -->
       <div class="col-sm-4 col-md-4 navbar-right">
 
-        <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+        <form class="form-inline my-2 my-md-0"  action="/search" role="search">
 
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search Article" name="article">
