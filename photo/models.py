@@ -82,3 +82,6 @@ class Location(models.Model):
 
     def delete_location(self):
         self.delete()
+
+
+
