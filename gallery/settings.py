@@ -31,7 +31,7 @@ SECRET_KEY='bhlv&93#h8fq4p5d*ctx*r!#x8l%bk_q8koqhbjv@fel$_#g88'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['photomoto.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,7 +86,12 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql',
-           'NAME': 'pics',
+           'NAME': 'desisam2m2po50',
+           'HOST':'ec2-18-235-107-171.compute-1.amazonaws.com',
+           'USER': 'bcgqlawsbydgkp',
+           'PORT': 5432,
+           'PASSWORD' : 'fb7a0b8685f1b7bc986c414423a18bdba9b2778aee5728530cc812b6d03d61ed',
+          
         
        }
        
