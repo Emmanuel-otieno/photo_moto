@@ -20,8 +20,8 @@ You need to have install:
 * pillow helps in uploading images - `pip install pillow`
 
 ## Samples
-* ![Alt text](images/Screenshot from 2021-01-12 08-20-01.png?raw=true "Home page")
-* ![Alt text](relative/path/to/img.jpg?raw=true "search")
+* ![Home page](images/Screenshot from 2021-01-12 08-20-01.png?raw=true "Home page")
+
 
 ## Known Bugs
  None
