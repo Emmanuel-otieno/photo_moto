@@ -9,8 +9,13 @@
 
 Personal gallery application that help you to display your photos for others to see.
 
-## sample
+## sample 
+* Home page
 ![Screenshot from 2021-01-12 08-20-01](https://user-images.githubusercontent.com/70565900/104274467-f61d6c00-54b1-11eb-88d1-d7ffc848eeea.png)
+
+* search 
+![Screenshot from 2021-01-12 08-52-20](https://user-images.githubusercontent.com/70565900/104275322-a8096800-54b3-11eb-86e8-25dac698eab1.png)
+
 
 
 ## Prerequisites
