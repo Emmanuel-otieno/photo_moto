@@ -63,7 +63,7 @@ ROOT_URLCONF = 'gallery.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': r'/app/.heroku/python/lib/python3.6/site-packages/bootstrap3/templates',
+        'DIRS': r'/app/.heroku/python/lib/python3.6/site-packages/bootstrap3/templates/index.html',
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
