@@ -17,6 +17,8 @@ Personal gallery application that help you to display your photos for others to 
 ![Screenshot from 2021-01-12 08-52-20](https://user-images.githubusercontent.com/70565900/104275322-a8096800-54b3-11eb-86e8-25dac698eab1.png)
 
 * copying links
+![Screenshot from 2021-01-12 10-26-10](https://user-images.githubusercontent.com/70565900/104282874-c0cc4a80-54c0-11eb-8236-f2a247e9949c.png)
+
 
 
 ## Prerequisites
