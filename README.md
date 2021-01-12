@@ -19,8 +19,6 @@ You need to have install:
 * project-`django-admin startproject project_name .`
 * pillow helps in uploading images - `pip install pillow`
 
-## Samples
-* ![Home page](images/Screenshot from 2021-01-12 08-20-01.png?raw=true "Home page")
 
 
 ## Known Bugs
